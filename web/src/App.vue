@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="" style="background:#E6DDC4">
+    <BannerComponent msg="Welcome to Your Vue.js App"/>
+    <div class="container mx-auto my-10">
+      <CategoriesComponent/>
+      <CardPersonComponent class="my-5"/>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BannerComponent from "./components/Banner.vue"
+import CategoriesComponent from "./components/Categories.vue"
+import CardPersonComponent from "./components/CardPerson.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BannerComponent,
+    CategoriesComponent,
+    CardPersonComponent
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
