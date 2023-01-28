@@ -1,5 +1,5 @@
 <template>
-    <div class="list-categories inline-grid grid-cols-12 gap-1">
+    <div class="list-categories inline-grid grid-cols-12 gap-4">
         <span v-for="category in categories" :key="category.id" class="px-1">
             {{ category.label }}
         </span>

@@ -23,7 +23,25 @@ export default {
 </script>
 
 <style>
-.divItem{
-    background: white;
-}
+    .divItem{
+        background: white;
+        padding-bottom: 20px;
+    }
+
+    img{
+        margin-bottom: 10px;
+    }
+
+    h2{
+        margin: 10px 0 !important;
+    }
+
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3; 
+        -webkit-box-orient: vertical;
+    }
 </style>
