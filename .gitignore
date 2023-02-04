@@ -32,6 +32,8 @@ Backendbuild/
 Backend/!**/src/main/**/build/
 Backend/!**/src/test/**/build/
 
+Backend/src/main/resources/application.yml
+
 ### VS Code ###
 Backend/.vscode/
 
