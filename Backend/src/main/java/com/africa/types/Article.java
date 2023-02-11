@@ -3,28 +3,28 @@ package com.africa.types;
 
 
 //import org.springframework.web.multipart.MultipartFile;
-//
-//import jakarta.persistence.Entity;
-//import jakarta.persistence.GeneratedValue;
-//import jakarta.persistence.GenerationType;
-//import jakarta.persistence.Id;
-//import jakarta.persistence.SequenceGenerator;
-//import jakarta.persistence.Table;
 
-//@Entity
-//@Table
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
 public class Article {
-//	@Id
-//	@SequenceGenerator(
-//			name = "students_sequence",
-//			sequenceName = "students_sequence",
-//			allocationSize = 1
-//	)
-//	
-//	@GeneratedValue(
-//			strategy = GenerationType.SEQUENCE,
-//			generator = "students_sequence"
-//	)
+	@Id
+	@SequenceGenerator(
+			name = "articles_sequence",
+			sequenceName = "articles_sequence",
+			allocationSize = 1
+	)
+	
+	@GeneratedValue(
+			strategy = GenerationType.SEQUENCE,
+			generator = "articles_sequence"
+	)
 	
 	private Long articleid;
 	private String title;
