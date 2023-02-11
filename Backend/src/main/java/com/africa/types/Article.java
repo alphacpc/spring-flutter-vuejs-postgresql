@@ -1,20 +1,42 @@
-package com.africa.articles;
+package com.africa.types;
 
-import java.io.File;
-import java.time.LocalDate;
 
+
+//import org.springframework.web.multipart.MultipartFile;
+//
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.GeneratedValue;
+//import jakarta.persistence.GenerationType;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.SequenceGenerator;
+//import jakarta.persistence.Table;
+
+//@Entity
+//@Table
 public class Article {
+//	@Id
+//	@SequenceGenerator(
+//			name = "students_sequence",
+//			sequenceName = "students_sequence",
+//			allocationSize = 1
+//	)
+//	
+//	@GeneratedValue(
+//			strategy = GenerationType.SEQUENCE,
+//			generator = "students_sequence"
+//	)
 	
 	private Long articleid;
 	private String title;
 	private String desc;
 	private String body;
-	private File image;
+//	private MultipartFile image;
+	private String image_filename;
 	private Integer likes;
 	private Long categorid;
 	private Long authorid;
-	private LocalDate createdAt;
-	private LocalDate lastUpdatedAt;
+	private String createdAt;
+	private String lastUpdatedAt;
 	
 	/////////////////////////////
 	/////// CONSTRUCTOR ////////
@@ -24,14 +46,14 @@ public class Article {
 	}
 
 
-	public Article(Long articleid, String title, String desc, String body, File image, Integer likes, Long categorid,
-			Long authorid, LocalDate createdAt, LocalDate lastUpdatedAt) {
+	public Article(Long articleid, String title, String desc, String body, String image_filename, Integer likes, Long categorid,
+			Long authorid, String createdAt, String lastUpdatedAt) {
 		super();
 		this.articleid = articleid;
 		this.title = title;
 		this.desc = desc;
 		this.body = body;
-		this.image = image;
+		this.image_filename = image_filename;
 		this.likes = likes;
 		this.categorid = categorid;
 		this.authorid = authorid;
@@ -40,13 +62,13 @@ public class Article {
 	}
 
 
-	public Article(String title, String desc, String body, File image, Integer likes, Long categorid, Long authorid,
-			LocalDate createdAt, LocalDate lastUpdatedAt) {
+	public Article(String title, String desc, String body, String image_filename, Integer likes, Long categorid, Long authorid,
+			String createdAt, String lastUpdatedAt) {
 		super();
 		this.title = title;
 		this.desc = desc;
 		this.body = body;
-		this.image = image;
+		this.image_filename = image_filename;
 		this.likes = likes;
 		this.categorid = categorid;
 		this.authorid = authorid;
@@ -55,13 +77,13 @@ public class Article {
 	}
 
 
-	public Article(String title, String desc, String body, File image, Integer likes, Long categorid, Long authorid,
-			LocalDate lastUpdatedAt) {
+	public Article(String title, String desc, String body, String image_filename, Integer likes, Long categorid, Long authorid,
+			String lastUpdatedAt) {
 		super();
 		this.title = title;
 		this.desc = desc;
 		this.body = body;
-		this.image = image;
+		this.image_filename = image_filename;
 		this.likes = likes;
 		this.categorid = categorid;
 		this.authorid = authorid;
@@ -111,15 +133,15 @@ public class Article {
 		this.body = body;
 	}
 
-
-	public File getImage() {
-		return image;
-	}
-
-
-	public void setImage(File image) {
-		this.image = image;
-	}
+//
+//	public MultipartFile getImage() {
+//		return image;
+//	}
+//
+//
+//	public void setImage(MultipartFile image) {
+//		this.image = image;
+//	}
 
 
 	public Integer getLikes() {
@@ -152,22 +174,22 @@ public class Article {
 	}
 
 
-	public LocalDate getCreatedAt() {
+	public String getCreatedAt() {
 		return createdAt;
 	}
 
 
-	public void setCreatedAt(LocalDate createdAt) {
+	public void setCreatedAt(String createdAt) {
 		this.createdAt = createdAt;
 	}
 
 
-	public LocalDate getLastUpdatedAt() {
+	public String getLastUpdatedAt() {
 		return lastUpdatedAt;
 	}
 
 
-	public void setLastUpdatedAt(LocalDate lastUpdatedAt) {
+	public void setLastUpdatedAt(String lastUpdatedAt) {
 		this.lastUpdatedAt = lastUpdatedAt;
 	}
 
@@ -175,7 +197,17 @@ public class Article {
 	@Override
 	public String toString() {
 		return "Article [articleid=" + articleid + ", title=" + title + ", desc=" + desc + ", body=" + body + ", image="
-				+ image + ", likes=" + likes + ", categorid=" + categorid + ", authorid=" + authorid + "]";
+				+ image_filename + ", likes=" + likes + ", categorid=" + categorid + ", authorid=" + authorid + "]";
+	}
+
+
+	public String getImage_filename() {
+		return image_filename;
+	}
+
+
+	public void setImage_filename(String image_filename) {
+		this.image_filename = image_filename;
 	}
 	
 	

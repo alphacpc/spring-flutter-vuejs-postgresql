@@ -1,4 +1,4 @@
-package com.africa.articles;
+package com.africa.service;
 
 public class ArticleService {
 
