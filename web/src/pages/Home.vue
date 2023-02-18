@@ -1,5 +1,5 @@
 <template>
-  <div class="mainContainer" style="background:#282A3A">
+  <div class="mainContainer" style="background:#E2E2E2">
     <BannerComponent msg="Welcome to Your Vue.js App"/>
     <div class="container mx-auto my-10">
       <CategoriesComponent/>

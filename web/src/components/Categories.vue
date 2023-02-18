@@ -19,7 +19,6 @@
                 { label: 'Sante', id : 4 },
                 { label: 'Résistance', id : 5 },
                 { label: 'Sport', id : 6 },
-                { label: 'Entreprenariat', id : 7 },
             ]
         }
         }
@@ -30,7 +29,8 @@
 
 <style>
 .list-categories span{
-    background: yellow;
+    background: #282A3A;
+    color: #FFF;
     text-align: center;
     border-radius: 4px;
     padding: 5px;

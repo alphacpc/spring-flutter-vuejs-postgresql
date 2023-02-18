@@ -25,7 +25,7 @@ export default {
 
 .divPaginate span{
     padding: 8px 15px;
-    background: yellow;
+    background: #FFF;
     margin: 0 8px;
     border-radius: 50%;
     font-size: 20px;
