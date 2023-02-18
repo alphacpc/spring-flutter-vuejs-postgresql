@@ -1,28 +1,28 @@
 package com.africa.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.africa.types.User;
+import com.africa.service.UserService;
+import com.africa.types.Users;
 
 @RestController
 @RequestMapping("api/v1/users")
 public class UserController {
+	
+	private final UserService userService;
+	
+	public UserController(UserService userService) {
+		this.userService = userService;
+	}
 
 	@GetMapping
-	public User request_get_user() {
+	public List<Users> request_get_user() {
 		
-		User user = new User();
-		
-		user.setFname("alpha");
-		user.setLname("DIALLO");
-		user.setEmail("alphacpc@africa-warriors.sn");
-		user.setPassword("passer123");
-		user.setRole("admin");
-		user.setJob("Fullstack Dev");
-		
-		return user; 
+		return userService.get_users(); 
 	}
 	
 

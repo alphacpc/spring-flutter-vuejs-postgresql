@@ -1,6 +1,27 @@
 package com.africa.types;
 
-public class User {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
+public class Users {
+	
+	@Id
+	@SequenceGenerator(
+			name = "users_sequence",
+			sequenceName = "users_sequence",
+			allocationSize = 1
+	)
+	
+	@GeneratedValue(
+			strategy = GenerationType.SEQUENCE,
+			generator = "users_sequence"
+	)
 
 	private Long userid;
 	private String fname;
@@ -11,12 +32,12 @@ public class User {
 	private String job;
 	
 	
-	public User() {
+	public Users() {
 		super();
 	}
 
 
-	public User(Long userid, String fname, String lname, String role, String email, String password, String job) {
+	public Users(Long userid, String fname, String lname, String role, String email, String password, String job) {
 		super();
 		this.userid = userid;
 		this.fname = fname;
@@ -28,7 +49,7 @@ public class User {
 	}
 
 
-	public User(String fname, String lname, String role, String email, String password, String job) {
+	public Users(String fname, String lname, String role, String email, String password, String job) {
 		super();
 		this.fname = fname;
 		this.lname = lname;
