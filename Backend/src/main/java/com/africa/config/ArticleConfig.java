@@ -16,8 +16,8 @@ public class ArticleConfig {
 	CommandLineRunner commandLineRunner(ArticleRepository repository) {
 		return args -> {
 			
-			Article alpha = new Article(1L,"Alpha", "DIALLO", "alphacpc@gmail.com", "me.png", 2, 1L, 1L, "jl", "lj");
-			Article nabou = new Article(2L,"Nabou", "SOW", "nabouc@gmail.com", "you.png", 3, 1L, 1L, "jl", "lj");
+			Article alpha = new Article(1L,"Solve bug file application", "YAML and Properties", "files application.yml and application.properties not working to gether", "capture.png", 1, 1L, 1L, "2023-02-18", "2023-02-18");
+			Article nabou = new Article(2L,"Test without decoration", "Remove decoration", "I remove all decorations @Autowored and @Repository", "repository.png", 1, 1L, 1L, "2023-02-18", "2023-02-18");
 			
 			repository.saveAll(List.of(alpha, nabou));
 		};
