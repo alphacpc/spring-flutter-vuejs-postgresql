@@ -1,7 +1,5 @@
 package com.africa.controller;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.africa.config.Needs;
-import com.africa.repository.ArticleRepository;
 import com.africa.service.ArticleService;
 import com.africa.types.Article;
 
@@ -37,11 +34,8 @@ public class ArticleController {
 	@GetMapping
 	public List<Article> request_all_articles() {
 		
-		//String m = LocalDate.of(2020, Month.DECEMBER, 12).toString();
-		
-		//Article article = new Article(1L, "Sidy & Rama", "Desc courte", "Le corps...", "image.png", 2, 1L, 1L, m , m);
-		
 		return articleService.get_articles();
+		
 	}
 	
 	

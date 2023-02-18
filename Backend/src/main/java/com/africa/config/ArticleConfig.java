@@ -1,8 +1,5 @@
 package com.africa.config;
 
-
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 
 import org.springframework.boot.CommandLineRunner;
@@ -18,11 +15,11 @@ public class ArticleConfig {
 	@Bean
 	CommandLineRunner commandLineRunner(ArticleRepository repository) {
 		return args -> {
-			Article alpha = new Article(1L,"Alpha", "DIALLO", "alphacpc@gmail.com", null, 2, 1L, 1L, "jl", "lj");
 			
-			repository.saveAll(
-					List.of(alpha)
-			);
+			Article alpha = new Article(1L,"Alpha", "DIALLO", "alphacpc@gmail.com", "me.png", 2, 1L, 1L, "jl", "lj");
+			Article nabou = new Article(2L,"Nabou", "SOW", "nabouc@gmail.com", "you.png", 3, 1L, 1L, "jl", "lj");
+			
+			repository.saveAll(List.of(alpha, nabou));
 		};
 	}
 }
