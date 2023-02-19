@@ -35,7 +35,7 @@ Backend/!**/src/test/**/build/
 Backend/src/main/resources/application.yml
 Backend/src/main/resources/application.yml.txt
 Backend/src/main/resources/application.properties
-
+Backend/src/main/resources/application.properties
 ### VS Code ###
 Backend/.vscode/
 
