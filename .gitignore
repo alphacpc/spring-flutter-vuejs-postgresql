@@ -33,6 +33,11 @@ Backend/!**/src/main/**/build/
 Backend/!**/src/test/**/build/
 
 Backend/src/main/resources/application.yml
+<<<<<<< HEAD
+=======
+Backend/src/main/resources/application.yml.txt
+Backend/src/main/resources/application.properties
+>>>>>>> f6f32ab... Git guardian detected
 
 ### VS Code ###
 Backend/.vscode/
