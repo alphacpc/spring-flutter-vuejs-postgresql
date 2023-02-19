@@ -1,7 +1,11 @@
 package com.africa.controller;
 
+<<<<<<< HEAD
 import java.time.LocalDate;
 import java.time.Month;
+=======
+import java.util.List;
+>>>>>>> 5670e080b98d7944c41ea6bda0dac85d3f7433c2
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,29 +16,37 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.africa.config.Needs;
+<<<<<<< HEAD
+=======
+import com.africa.service.ArticleService;
+>>>>>>> 5670e080b98d7944c41ea6bda0dac85d3f7433c2
 import com.africa.types.Article;
 
-import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("api/v1/articles")
 public class ArticleController {
+	
+	private final ArticleService articleService;
+
+	
+	public ArticleController(ArticleService articleService) {
+		this.articleService = articleService;
+	}
 
 	//////////////////////////////
 	/////// METHODS APIs ////////
 	////////////////////////////
 	@GetMapping
-	public Article request_all_articles() {
+	public List<Article> request_all_articles() {
 		
-		String m = LocalDate.of(2020, Month.DECEMBER, 12).toString();
+		return articleService.get_articles();
 		
-		Article article = new Article(1L, "Sidy & Rama", "Desc courte", "Le corps...", "image.png", 2, 1L, 1L, m , m);
-		
-		return article;
 	}
 	
 	
 	@PostMapping("new")
+<<<<<<< HEAD
 	public Article request_add_article(HttpServletRequest request, @RequestParam(value="file") MultipartFile file) {
 		
 		Article article = new Article();
@@ -50,14 +62,29 @@ public class ArticleController {
 		article.setLastUpdatedAt(new Needs().render_datetime());
 		
 		return article;
+=======
+	public String request_add_article(@RequestBody Article article) {
+		
+		article.setCreatedAt(new Needs().render_datetime());
+		article.setLastUpdatedAt(new Needs().render_datetime());
+		
+		return articleService.add_article(article);
+>>>>>>> 5670e080b98d7944c41ea6bda0dac85d3f7433c2
 	}
 	
 	
 	@PostMapping("test")
+<<<<<<< HEAD
 	public Article request_add_article(@RequestBody Article article, @RequestParam(value="file") MultipartFile file) {
 	    
 	    article.setLastUpdatedAt(new Needs().render_datetime());
+=======
+	public List<String> request_add_article(@RequestParam("file") MultipartFile file) {
+>>>>>>> 5670e080b98d7944c41ea6bda0dac85d3f7433c2
 		
-		return article;
+		return List.of(file.getOriginalFilename());
+	
 	}
+
+	
 }

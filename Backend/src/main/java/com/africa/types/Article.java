@@ -1,36 +1,31 @@
 package com.africa.types;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
 
-
-//import org.springframework.web.multipart.MultipartFile;
-//
-//import jakarta.persistence.Entity;
-//import jakarta.persistence.GeneratedValue;
-//import jakarta.persistence.GenerationType;
-//import jakarta.persistence.Id;
-//import jakarta.persistence.SequenceGenerator;
-//import jakarta.persistence.Table;
-
-//@Entity
-//@Table
+@Entity
+@Table
 public class Article {
-//	@Id
-//	@SequenceGenerator(
-//			name = "students_sequence",
-//			sequenceName = "students_sequence",
-//			allocationSize = 1
-//	)
-//	
-//	@GeneratedValue(
-//			strategy = GenerationType.SEQUENCE,
-//			generator = "students_sequence"
-//	)
+	@Id
+	@SequenceGenerator(
+			name = "articles_sequence",
+			sequenceName = "articles_sequence",
+			allocationSize = 1
+	)
+	
+	@GeneratedValue(
+			strategy = GenerationType.SEQUENCE,
+			generator = "articles_sequence"
+	)
 	
 	private Long articleid;
 	private String title;
-	private String desc;
+	private String describe;
 	private String body;
-//	private MultipartFile image;
 	private String image_filename;
 	private Integer likes;
 	private Long categorid;
@@ -46,12 +41,12 @@ public class Article {
 	}
 
 
-	public Article(Long articleid, String title, String desc, String body, String image_filename, Integer likes, Long categorid,
+	public Article(Long articleid, String title, String describe, String body, String image_filename, Integer likes, Long categorid,
 			Long authorid, String createdAt, String lastUpdatedAt) {
 		super();
 		this.articleid = articleid;
 		this.title = title;
-		this.desc = desc;
+		this.describe = describe;
 		this.body = body;
 		this.image_filename = image_filename;
 		this.likes = likes;
@@ -62,11 +57,11 @@ public class Article {
 	}
 
 
-	public Article(String title, String desc, String body, String image_filename, Integer likes, Long categorid, Long authorid,
+	public Article(String title, String describe, String body, String image_filename, Integer likes, Long categorid, Long authorid,
 			String createdAt, String lastUpdatedAt) {
 		super();
 		this.title = title;
-		this.desc = desc;
+		this.describe = describe;
 		this.body = body;
 		this.image_filename = image_filename;
 		this.likes = likes;
@@ -77,11 +72,11 @@ public class Article {
 	}
 
 
-	public Article(String title, String desc, String body, String image_filename, Integer likes, Long categorid, Long authorid,
+	public Article(String title, String describe, String body, String image_filename, Integer likes, Long categorid, Long authorid,
 			String lastUpdatedAt) {
 		super();
 		this.title = title;
-		this.desc = desc;
+		this.describe = describe;
 		this.body = body;
 		this.image_filename = image_filename;
 		this.likes = likes;
@@ -114,13 +109,13 @@ public class Article {
 	}
 
 
-	public String getDesc() {
-		return desc;
+	public String getDescribe() {
+		return describe;
 	}
 
 
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDescribe(String describe) {
+		this.describe = describe;
 	}
 
 
@@ -132,16 +127,6 @@ public class Article {
 	public void setBody(String body) {
 		this.body = body;
 	}
-
-//
-//	public MultipartFile getImage() {
-//		return image;
-//	}
-//
-//
-//	public void setImage(MultipartFile image) {
-//		this.image = image;
-//	}
 
 
 	public Integer getLikes() {
@@ -192,15 +177,7 @@ public class Article {
 	public void setLastUpdatedAt(String lastUpdatedAt) {
 		this.lastUpdatedAt = lastUpdatedAt;
 	}
-
-
-	@Override
-	public String toString() {
-		return "Article [articleid=" + articleid + ", title=" + title + ", desc=" + desc + ", body=" + body + ", image="
-				+ image_filename + ", likes=" + likes + ", categorid=" + categorid + ", authorid=" + authorid + "]";
-	}
-
-
+	
 	public String getImage_filename() {
 		return image_filename;
 	}
@@ -209,10 +186,12 @@ public class Article {
 	public void setImage_filename(String image_filename) {
 		this.image_filename = image_filename;
 	}
-	
-	
-	
-	
-	
+
+
+	@Override
+	public String toString() {
+		return "Article [articleid=" + articleid + ", title=" + title + ", desc=" + describe + ", body=" + body + ", image="
+				+ image_filename + ", likes=" + likes + ", categorid=" + categorid + ", authorid=" + authorid + "]";
+	}
 
 }

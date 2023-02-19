@@ -34,6 +34,7 @@ Backend/!**/src/test/**/build/
 
 Backend/src/main/resources/application.yml
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Backend/src/main/resources/application.yml.txt
 Backend/src/main/resources/application.properties
@@ -43,6 +44,11 @@ Backend/src/main/resources/application.properties
 =======
 Backend/src/main/resources/application.properties
 >>>>>>> 5670e08... Updated gitignore
+=======
+Backend/src/main/resources/application.yml.txt
+Backend/src/main/resources/application.properties
+Backend/src/main/resources/application.properties
+>>>>>>> 5670e080b98d7944c41ea6bda0dac85d3f7433c2
 ### VS Code ###
 Backend/.vscode/
 
