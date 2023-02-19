@@ -37,8 +37,12 @@ Backend/src/main/resources/application.yml
 =======
 Backend/src/main/resources/application.yml.txt
 Backend/src/main/resources/application.properties
+<<<<<<< HEAD
 >>>>>>> f6f32ab... Git guardian detected
 
+=======
+Backend/src/main/resources/application.properties
+>>>>>>> 5670e08... Updated gitignore
 ### VS Code ###
 Backend/.vscode/
 
