@@ -10,7 +10,7 @@ public class Welcome {
 
 	@GetMapping
 	public String SayHello() {
-		return "HELLO API CONTROLLER, I'm working well !!!!";
+		return "HELLO API CONTROLLER !!!!";
 	}
 
 }
