@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS discovery;
+
 CREATE TABLE IF NOT EXISTS  users (
     user_id INT PRIMARY KEY,
     user_fname VARCHAR(100),
