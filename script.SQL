@@ -21,6 +21,25 @@ CREATE TABLE IF NOT EXISTS  lieux (
     lieu_city VARCHAR(100),
     lieu_lat FLOAT,
 	lieu_long FLOAT,
-	lieu_image VARCHAR(100)
+	lieu_image VARCHAR(100),
+    lieu_category INT FOREIGN KEY(category_id),
+    lieu_album INT FOREIGN KEY()
 );
 
+CREATE TABLE IF NOT EXITS category(
+    category_id INT PRIMARY KEY,
+    category_name VARCHAR(100)
+);
+
+
+CREATE TABLE IF NOT EXITS album(
+    album_id INT PRIMARY KEY,
+    album_name VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXITS photo(
+    photo_id INT PRIMARY KEY,
+    photo_name VARCHAR(100),
+    photo_url VARCHAR(100),
+    photo_album_id INT FOREIGN KEY(album_id)
+);
