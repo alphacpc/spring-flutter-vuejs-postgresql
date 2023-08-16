@@ -1,5 +1,5 @@
 package com.discover.services;
 
-public class userService {
+public class UserService {
 
 }

@@ -1,5 +1,5 @@
 package com.discover.repositories;
 
-public class userRepository {
+public class UserRepository {
 
 }
