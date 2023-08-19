@@ -45,6 +45,20 @@ public class UserEntity {
 	}
 	
 	
+	
+	public UserEntity(String userFname, String userLname, String userRole, Boolean userActif, String userPwd,
+			String userEmail) {
+		super();
+		this.userFname = userFname;
+		this.userLname = userLname;
+		this.userRole = userRole;
+		this.userActif = userActif;
+		this.userPwd = userPwd;
+		this.userEmail = userEmail;
+	}
+
+
+
 	public UserEntity(Long userId, String userFname, String userLname, String userRole, Boolean userActif,
 			String userPwd, String userEmail) {
 		this.userId = userId;
@@ -56,17 +70,6 @@ public class UserEntity {
 		this.userEmail = userEmail;
 	}
 
-	public UserEntity(Long userId, String userFname, String userLname, String userRole, Boolean userActif,
-			String userPwd, String userEmail, Date dateUpdate) {
-		this.userId = userId;
-		this.userFname = userFname;
-		this.userLname = userLname;
-		this.userRole = userRole;
-		this.userActif = userActif;
-		this.userPwd = userPwd;
-		this.userEmail = userEmail;
-		this.dateUpdate = dateUpdate;
-	}
 
 	
 	public Long getUserId() {
@@ -117,7 +120,5 @@ public class UserEntity {
 	public void setDateUpdate(Date dateUpdate) {
 		this.dateUpdate = dateUpdate;
 	}
-	
-	
 	
 }
