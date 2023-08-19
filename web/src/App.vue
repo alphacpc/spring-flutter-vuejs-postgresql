@@ -1,9 +1,16 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import Header from './components/shared/Header.vue'
+  import Footer from './components/shared/Footer.vue'
+  
 </script>
 
 <template>
-  <HelloWorld msg="Hello world"/>
+    <div>
+      <Header/>
+      <h1>My Vue App</h1>
+      <router-view></router-view>
+      <Footer/>
+    </div>
 </template>
 
 <style scoped>
