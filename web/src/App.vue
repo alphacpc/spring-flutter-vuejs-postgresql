@@ -5,10 +5,13 @@
 </script>
 
 <template>
-    <div>
+    <div class="container-app">
       <Header/>
-      <h1>My Vue App</h1>
-      <router-view></router-view>
+      
+      <div className="bg-slate-100 min-h-[80vh]">
+        <router-view></router-view>
+      </div>
+
       <Footer/>
     </div>
 </template>
