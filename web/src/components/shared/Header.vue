@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div className="bg-transparent flex justify-between items-center px-4 py-2">
+    <div className="bg-transparent flex justify-between items-center px-4 py-5">
         <div class="relative flex items-center">
             <h1 className="font-extrabold text-2xl z-10">alphacpc</h1>
             <span class="absolute p-5 bg-lime-400 left-1/3 rounded-full"></span>

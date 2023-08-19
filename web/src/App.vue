@@ -9,7 +9,6 @@
       <Header/>
       
       <div className="bg-slate-100 min-h-[80vh]">
-
         <router-view></router-view>
       </div>
 
