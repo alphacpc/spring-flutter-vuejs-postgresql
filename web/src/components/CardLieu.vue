@@ -17,7 +17,9 @@
             </div>
             <div className="px-1 p-3">
                 <div className="flex justify-between items-center">
-                    <h2 className="font-bold text-lg">Keur malikounda, Bignona</h2>
+                    <router-link to="/detail">
+                        <h2 className="font-bold text-lg">Keur malikounda, Bignona</h2>
+                    </router-link>
                     <span><fa icon="star"/> 4,5</span>
                 </div>
                 <p className="py-2"><fa icon="location"/> 12.53736 (Lat), 12.53736 (Long)</p>

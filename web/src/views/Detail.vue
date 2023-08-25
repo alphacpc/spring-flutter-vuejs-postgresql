@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div className="flex-1 bg-white ml-2 rounded-lg px-4 py-4">
-                    <h1 className="text-4xl font-bold">Keur malikounda, Bignona</h1>
+                    <h1 className="text-4xl font-bold">Keur malikounda</h1>
     
                     <div className="flex justify-between items-center">
                         <p className="pt-4 text-lg"><fa icon="location"/> 12.53736 (Lat), 12.53736 (Long)</p>
@@ -46,12 +46,20 @@
                         Quasi quam optio laborum id quos minima quibusdam illum reprehenderit ab obcaecati dolor corrupti ut dolores iste vitae modi, necessitatibus dolorem, repellendus et voluptates! Aliquam magnam distinctio cum. Eligendi, consequuntur.
                         Nisi sed, dignissimos laudantium iusto obcaecati voluptas saepe omnis praesentium deleniti consectetur quibusdam nesciunt laborum qui, quo vero. Eos quam veritatis ratione voluptates tenetur impedit repudiandae! Fugiat illum quo quos?</p>
                     </div>
+                    <div className="etoiles">
+                        <h2 className="font-semibold text-lg py-2 text-black">Notes</h2>
+                        <div className="flex w-max-[5rem]">
+                            <fa icon="star" class="text-3xl mr-2 text-yellow-400"/>
+                            <fa icon="star" class="text-3xl mr-2 text-yellow-400"/>
+                            <fa icon="star" class="text-3xl mr-2 text-yellow-400"/>
+                        </div>
+                    </div>
                     <div>
-                        <h2 className="font-semibold text-center py-4 text-xl">Associé à ...</h2>
-                        <div>
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
+                        <h2 className="font-semibold text-center py-4 text-2xl">Associé à ...</h2>
+                        <div className="flex justify-around">
+                            <div className="border-2 shadow-lg h-[25vh] rounded-lg p-2 w-1/4"></div>
+                            <div className="border-2 shadow-lg h-[25vh] rounded-lg p-2 w-1/3"></div>
+                            <div className="border-2 shadow-lg h-[25vh] rounded-lg p-2 w-1/4"></div>
                         </div>
                     </div>
                 </div>
