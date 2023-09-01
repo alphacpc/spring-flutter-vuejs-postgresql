@@ -25,7 +25,7 @@
     <div className="bg-whit p-4 border-t-2">
         
         <div className="flex">
-          <div className="shadow-lg w-[15rem] flex items-center">
+          <div className="w-[15rem] flex items-center">
             <div className="bg-white p-4 rounded w-full">
               <div className="rounded-full flex justify-center">
                 <img src="./../assets/images/img1.jpg" className="object-cover border-4 border-green-500 w-[10rem] h-[10rem] rounded-full" />
@@ -43,24 +43,25 @@
             </div>
           </div>
           
-          <div className="flex-1 bg-white rounded-md py-5 ml-2 min-h-[85vh] max-h-[85vh]">
+          <div className="flex-1 bg-white rounded-md py-4 px-4 ml-2 min-h-[85vh] max-h-[85vh]">
             <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
 
             <table className="w-full">
               <thead>
                 <tr className="bg-slate-200 font-semibold rounded-md py-2">
-                  <th className="py-2 text-lg font-thin uppercase text-center">Image</th>
-                  <th className="py-2 text-lg font-thin uppercase text-start">Titre</th>
-                  <th className="py-2 text-lg font-thin uppercase text-start">Categorie</th>
-                  <th className="py-2 text-lg font-thin uppercase text-start">Description (courte)</th>
-                  <th className="py-2 text-lg font-thin uppercase text-start">Note(s)</th>
-                  <th className="py-2 text-lg font-thin uppercase text-start">Ville</th>
-                  <th className="py-2 text-lg font-thin uppercase text-start">Cordonnées</th>
-                  <th className="py-2 text-lg font-thin uppercase text-center">Actions</th>
+                  <th className="py-4 font-bold text-lg uppercase text-center">Image</th>
+                  <th className="py-4 font-bold text-lg uppercase text-start">Titre</th>
+                  <th className="py-4 font-bold text-lg uppercase text-start">Categorie</th>
+                  <th className="py-4 font-bold text-lg uppercase text-start">Description (courte)</th>
+                  <th className="py-4 font-bold text-lg uppercase text-start">Note(s)</th>
+                  <th className="py-4 font-bold text-lg uppercase text-start">Ville</th>
+                  <th className="py-4 font-bold text-lg uppercase text-start">Cordonnées</th>
+                  <th className="py-4 font-bold text-lg uppercase text-center">Actions</th>
                 </tr>
               </thead>
 
               <tbody>
+
                 <tr>
                   <td className="py-1 text-base border-b-2 text-center">Image</td>
                   <td className="py-1 text-base border-b-2">Keur malikounda</td>
@@ -73,11 +74,12 @@
                     <span>long (10.788378)</span>
                   </td>
                   <td className="py-1 text-base border-b-2 text-center">
-                    <router-link className="" to="#">V</router-link>
-                    <router-link className="mx-3" to="#">M</router-link>
-                    <router-link className="" to="#">S</router-link>
+                    <router-link className="bg-yellow-500 p-2 rounded-full" to="#"><fa icon="eye"/></router-link>
+                    <router-link className="bg-green-500 p-2 rounded-full mx-3" to="#"><fa icon="edit"/></router-link>
+                    <router-link className="bg-red-600 p-2 rounded-full" to="#"><fa icon="trash" className="bg-red-500"/></router-link>
                   </td>
                 </tr>
+
                 <tr>
                   <td className="py-1 text-base border-b-2 text-center">Image</td>
                   <td className="py-1 text-base border-b-2">Keur malikounda</td>
@@ -90,11 +92,12 @@
                     <span>long (10.788378)</span>
                   </td>
                   <td className="py-1 text-base border-b-2 text-center">
-                    <router-link className="" to="#">V</router-link>
-                    <router-link className="mx-3" to="#">M</router-link>
-                    <router-link className="" to="#">S</router-link>
+                    <router-link className="bg-yellow-500 p-2 rounded-full" to="#"><fa icon="eye"/></router-link>
+                    <router-link className="bg-green-500 p-2 rounded-full mx-3" to="#"><fa icon="edit"/></router-link>
+                    <router-link className="bg-red-600 p-2 rounded-full" to="#"><fa icon="trash" className="bg-red-500"/></router-link>
                   </td>
                 </tr>
+
                 <tr>
                   <td className="py-1 text-base border-b-2 text-center">Image</td>
                   <td className="py-1 text-base border-b-2">Keur malikounda</td>
@@ -107,62 +110,12 @@
                     <span>long (10.788378)</span>
                   </td>
                   <td className="py-1 text-base border-b-2 text-center">
-                    <router-link className="" to="#">V</router-link>
-                    <router-link className="mx-3" to="#">M</router-link>
-                    <router-link className="" to="#">S</router-link>
+                    <router-link className="bg-yellow-500 p-2 rounded-full" to="#"><fa icon="eye"/></router-link>
+                    <router-link className="bg-green-500 p-2 rounded-full mx-3" to="#"><fa icon="edit"/></router-link>
+                    <router-link className="bg-red-600 p-2 rounded-full" to="#"><fa icon="trash" className="bg-red-500"/></router-link>
                   </td>
                 </tr>
-                <tr>
-                  <td className="py-1 text-base border-b-2 text-center">Image</td>
-                  <td className="py-1 text-base border-b-2">Keur malikounda</td>
-                  <td className="py-1 text-base border-b-2">culture</td>
-                  <td className="py-1 text-base border-b-2">lorem ipsum...</td>
-                  <td className="py-1 text-base border-b-2">4</td>
-                  <td className="py-1 text-base border-b-2">Bignona</td>
-                  <td className="py-1 text-base border-b-2 flex flex-col">
-                    <span>lat (12.638378)</span>
-                    <span>long (10.788378)</span>
-                  </td>
-                  <td className="py-1 text-base border-b-2 text-center">
-                    <router-link className="" to="#">V</router-link>
-                    <router-link className="mx-3" to="#">M</router-link>
-                    <router-link className="" to="#">S</router-link>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-1 text-base border-b-2 text-center">Image</td>
-                  <td className="py-1 text-base border-b-2">Keur malikounda</td>
-                  <td className="py-1 text-base border-b-2">culture</td>
-                  <td className="py-1 text-base border-b-2">lorem ipsum...</td>
-                  <td className="py-1 text-base border-b-2">4</td>
-                  <td className="py-1 text-base border-b-2">Bignona</td>
-                  <td className="py-1 text-base border-b-2 flex flex-col">
-                    <span>lat (12.638378)</span>
-                    <span>long (10.788378)</span>
-                  </td>
-                  <td className="py-1 text-base border-b-2 text-center">
-                    <router-link className="" to="#">V</router-link>
-                    <router-link className="mx-3" to="#">M</router-link>
-                    <router-link className="" to="#">S</router-link>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-1 text-base border-b-2 text-center">Image</td>
-                  <td className="py-1 text-base border-b-2">Keur malikounda</td>
-                  <td className="py-1 text-base border-b-2">culture</td>
-                  <td className="py-1 text-base border-b-2">lorem ipsum...</td>
-                  <td className="py-1 text-base border-b-2">4</td>
-                  <td className="py-1 text-base border-b-2">Bignona</td>
-                  <td className="py-1 text-base border-b-2 flex flex-col">
-                    <span>lat (12.638378)</span>
-                    <span>long (10.788378)</span>
-                  </td>
-                  <td className="py-1 text-base border-b-2 text-center">
-                    <router-link className="" to="#">V</router-link>
-                    <router-link className="mx-3" to="#">M</router-link>
-                    <router-link className="" to="#">S</router-link>
-                  </td>
-                </tr>
+
               </tbody>
 
             </table>
