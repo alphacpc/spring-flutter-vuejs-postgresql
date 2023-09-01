@@ -10,6 +10,8 @@ import {  fas } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fas);
 
+
+
 const app = createApp(App);
 app.use(router);
 app.use(VueApexCharts);
