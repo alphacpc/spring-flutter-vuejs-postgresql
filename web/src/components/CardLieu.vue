@@ -7,7 +7,7 @@
 
 
 
-        <div class="flex flex-col card w-1/6 bg-white rounded-xl mr-8 mb-8">
+        <div class="flex flex-col card w-1/6 bg-white rounded-xl mr-12 mb-12">
             <div className="flex relative">
                 <div className="absolute flex justify-between w-full px-2 z-10 top-2">
                     <span className="bg-yellow-400 font-thin text-sm px-1 py-0 h-5 cursor-pointer rounded">culture</span>
@@ -20,7 +20,7 @@
                     <router-link to="/detail">
                         <h2 className="font-bold text-lg">Keur malikounda, Bignona</h2>
                     </router-link>
-                    <span><fa icon="star"/> 4,5</span>
+                    <span className="text-yellow-400"><fa icon="star"/> 4,5</span>
                 </div>
                 <p className="py-2"><fa icon="location"/> 12.53736 (Lat), 12.53736 (Long)</p>
                 <p className="text-sm font-extralight text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta modi cumque sapiente, sed sint aliq...</p>
