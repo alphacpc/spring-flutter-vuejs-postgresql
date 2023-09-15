@@ -22,7 +22,7 @@
         <div>
             <ul className="flex w-[15rem] justify-between text-xl items-center">
 
-                <router-link to="/"><button className="bg-green-500 text-sm px-2 py-1 text-white rounded font-thin">se connecter</button></router-link>
+                <router-link to="/connexion"><button className="bg-green-500 text-sm px-2 py-1 text-white rounded font-thin">se connecter</button></router-link>
                 
                 <li>
                     <router-link to="#">
